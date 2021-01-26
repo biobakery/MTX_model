@@ -4,7 +4,7 @@
 This R package is built for metatranscriptomics (MTX) modeling based on [MaAsLin2](http://huttenhower.sph.harvard.edu/maaslin2). It integrates feature-specific covariates to determine multivariable association between metadata and microbial MTX features. MTX abundance changes are highly affected by underlying differences in metagenomic abundances (i.e. gene copy number). This package can adjust the DNA abundance as a continuous covariate for a given feature in the models for differential expression analysis in microbial communities. 
 
 
-If you use the MTX\_model package, please feel free to link it to your Methods: [MTX_model](http://huttenhower.sph.harvard.edu/mtx2021)
+If you use the MTX\_model package, please feel free to link it to your Methods: http://huttenhower.sph.harvard.edu/mtx2021
 
 --------------------------------------------
 
