@@ -1,5 +1,5 @@
 
-# MTX_model User Manual #
+# MTXmodel User Manual #
 
 This R package is built for metatranscriptomics (MTX) modeling based on [MaAsLin2](http://huttenhower.sph.harvard.edu/maaslin2). It integrates feature-specific covariates to determine multivariable association between metadata and microbial MTX features. MTX abundance changes are highly affected by underlying differences in metagenomic abundances (i.e. gene copy number). This package can adjust the DNA abundance as a continuous covariate for a given feature in the models for differential expression analysis in microbial communities. 
 
@@ -34,14 +34,14 @@ If only running from the command line, you do not need to install the MTX\_model
 
 ### From command line ###
 
-1. Download the source: [MTX_model.master.zip]()
+1. Download the source: [MTXmodel.master.zip](https://github.com/biobakery/mtx2021/archive/master.zip)
 2. Decompress the download: 
-    * ``$ tar xzvf MTX_model-master.zip``
+    * ``$ tar xzvf MTXmodel-master.zip``
 3. Install the Bioconductor dependencies edgeR and metagenomeSeq. 
 4. Install the CRAN dependencies:
     * ``$ R -q -e "install.packages(c('lmerTest','pbapply','car','dplyr','vegan','chemometrics','ggplot2','pheatmap','hash','logging','data.table','MuMIn','glmmTMB','MASS','cplm','pscl'), repos='http://cran.r-project.org')"``
-5. Install the MTX_model package (only required if running as an R function): 
-    * ``$ R CMD INSTALL MTX_model.tar.gz``
+5. Install the MTXmodel package (only required if running as an R function): 
+    * ``$ R CMD INSTALL MTXmodel-master``
 
 
 ## How to Run ##
@@ -95,9 +95,10 @@ the HMP2 data which can be downloaded from https://ibdmdb.org/ .
 
 #### Command line ####
 
-``$ MTX_model.R --transform=LOG --fixed_effects="diagnosis,dysbiosisnonIBD,dysbiosisUC,dysbiosisCD,antibiotics,age" --random_effects="subject" --normalization=NONE --standardize=FALSE --input_dnadata="inst/extdata/HMP2_pwyDNA.tsv" --inst/extdata/HMP2_pwyRNA.tsv inst/extdata/HMP2_metadata.tsv demo_output``
+``$ MTXmodel.R ../inst/extdata/HMP2_pwyRNA.tsv ../inst/extdata/HMP2_metadata.tsv demo_output --min_abundance 0 --min_prevalence 0.0 --max_significance 0.25 --min_variance 0.0 --correction BH --standardize TRUE --normalization NONE --transform LOG --analysis_method LM --cores 1 --fixed_effects diagnosis,dysbiosisCD,dysbiosisUC,dysbiosisnonIBD,antibiotics,age --random_effects subject,site --plot_heatmap FALSE --plot_scatter FALSE --reference diagnosis,nonIBD --rna_dna_flt local --input_dnadata  ../inst/extdata/HMP2_pwyDNA.tsv
+``
 
-* Make sure to provide the full path to the MTX\_model executable (ie ./R/MTX\_model.R).
+* Make sure to provide the full path to the MTXmodel executable (i.e., ./R/MTXmodel.R).
 * In the demo command:
     * ``HMP2_pwyRNA.tsv`` is the path to your data (or features) file
     * ``HMP2_pwyDNA.tsv`` is the path to your paired DNA data of features file
@@ -108,17 +109,18 @@ the HMP2 data which can be downloaded from https://ibdmdb.org/ .
 #### In R ####
 
 ```{r}
-library(MTX_model)
+library(MTXmodel)
 input_data <- system.file(
-    'extdata','HMP2_pwyDNA.tsv', package="MTX_model")
+    'extdata','HMP2_pwyDNA.tsv', package="MTXmodel")
 input_metadata <-system.file(
-    'extdata','HMP2_metadata.tsv', package="MTX_model")
+    'extdata','HMP2_metadata.tsv', package="MTXmodel")
 input_dnadata <- system.file(
-    'extdata','HMP2_pwyRNA.tsv', package="MTX_model")
-fit_data <- MTX_model(
-    input_data, input_metadata, 'demo_output', transform = "AST",
+    'extdata','HMP2_pwyRNA.tsv', package="MTXmodel")
+fit_data <- MTXmodel(
+    input_data, input_metadata, 'demo_output', transform = "LOG",
     fixed_effects = c('diagnosis', 'dysbiosisnonIBD','dysbiosisUC','dysbiosisCD', 'antibiotics', 'age'),
     random_effects = c('site', 'subject'),
+    reference = "diagnosis,nonIBD",
     normalization = 'NONE',
     standardize = FALSE,
     input_dnadata = input_dnadata
@@ -135,12 +137,12 @@ sessionInfo()
 
 ### Options ###
 
-Run MTX\_model help to print a list of the options and the default settings.
+Run MTXmodel help to print a list of the options and the default settings.
 
 
-$ MTX\_model.R --help
+$ MTXmodel.R --help
 
-Usage: ./R/MTX\_model.R [options] <data.tsv> <metadata.tsv> <output_folder>
+Usage: ./R/MTXmodel.R [options] <data.tsv> <metadata.tsv> <output_folder>
 
 
 Options:
