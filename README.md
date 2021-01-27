@@ -4,7 +4,7 @@
 This R package is built for metatranscriptomics (MTX) modeling based on [MaAsLin2](http://huttenhower.sph.harvard.edu/maaslin2). It integrates feature-specific covariates to determine multivariable association between metadata and microbial MTX features. MTX abundance changes are highly affected by underlying differences in metagenomic abundances (i.e. gene copy number). This package can adjust the DNA abundance as a continuous covariate for a given feature in the models for differential expression analysis in microbial communities. 
 
 
-If you use the MTX\_model package, please feel free to link it to your Methods: http://huttenhower.sph.harvard.edu/mtx2021
+If you use the MTXmodel package, please feel free to link it to your Methods: http://huttenhower.sph.harvard.edu/mtx2021
 
 --------------------------------------------
 
@@ -20,17 +20,17 @@ If you use the MTX\_model package, please feel free to link it to your Methods: 
 
 ## Description ##
 
-MTX\_model keeps all the features and functions of [MaAsLin2](https://github.com/biobakery/Maaslin2) and additionally add new functions which can be used for adjusting feature-specific covariates.
+MTXmodel keeps all the features and functions of [MaAsLin2](https://github.com/biobakery/Maaslin2) and additionally add new functions which can be used for adjusting feature-specific covariates.
 
 ## Requirements ##
 
-MTX\_model is an R package that can be run on the command line or as an R function.
+MTXmodel is an R package that can be run on the command line or as an R function.
 
 ## Installation ##
 
-MTX\_model can be run from the command line or as an R function.
+MTXmodel can be run from the command line or as an R function.
 
-If only running from the command line, you do not need to install the MTX\_model package but you will need to install the MTX\_model dependencies.
+If only running from the command line, you do not need to install the MTXmodel package but you will need to install the MTXmodel dependencies.
 
 ### From command line ###
 
@@ -46,11 +46,11 @@ If only running from the command line, you do not need to install the MTX\_model
 
 ## How to Run ##
 
-MTX\_model can be run from the command line or as an R function. Both methods require the same arguments, have the same options, and use the same default settings.
+MTXmodel can be run from the command line or as an R function. Both methods require the same arguments, have the same options, and use the same default settings.
 
 ### Input Files ###
 
-MTX\_model requires three input files.
+MTXmodel requires three input files.
 
 1. Data (or features) file
     * This file is tab-delimited.
@@ -73,17 +73,17 @@ The data file can contain samples not included in the metadata file
 included in both files will be removed from the analysis. 
 Also the samples do not need to be in the same order in the two files.
 
-NOTE: If running MTX\_model as a function, the data and metadata 
+NOTE: If running MTXmodel as a function, the data and metadata 
 inputs can be of type ``data.frame`` instead of a path to a file.
 
 ### Output Files ###
 
-MTX\_model generates the same types of output files with MaAsLin2: data and visualization. See more details in [MaAsLin2 manual](https://github.com/biobakery/Maaslin2#output-files) 
+MTXmodel generates the same types of output files with MaAsLin2: data and visualization. See more details in [MaAsLin2 manual](https://github.com/biobakery/Maaslin2#output-files) 
 
 ### Run a Demo ###
 
 Example input files can be found in the ``inst/extdata`` folder 
-of the MTX\_model source. The files provided were generated from
+of the MTXmodel source. The files provided were generated from
 the HMP2 data which can be downloaded from https://ibdmdb.org/ .
 
 ``HMP2_pwyRNA.tsv``: is a tab-delimited file with pathways as columns and samples as rows. It is a subset of the pathway file so it just includes the pathway RNA abundances for all samples.
