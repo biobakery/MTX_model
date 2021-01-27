@@ -15,7 +15,7 @@ Suggests:
     knitr,
     testthat (>= 2.1.0)
 VignetteBuilder: knitr
-Collate: fit.R utility_scripts.R utility_ext.R viz.R  MTXmodel.R
+Collate: fit.R utility_scripts.R utility_ext.R viz.R MTXmodel.R
 URL: http://huttenhower.sph.harvard.edu/mtx2021
 biocViews: Metatranscriptomics, Software, Microbiome, Normalization
 BugReports: https://github.com/biobakery/mtx2021/issues
