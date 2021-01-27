@@ -30,6 +30,7 @@ for (lib in c('optparse', 'logging', 'data.table', 'dplyr')) {
     suppressPackageStartupMessages(require(lib, character.only = TRUE))
 }
 
+
 ###############################################################
 # If running on the command line, load other modules #
 ###############################################################
