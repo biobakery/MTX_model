@@ -37,14 +37,14 @@ If only running from the command line, you do not need to install the MTXmodel p
 
 ### From command line ###
 
-1. Download the source: [MTXmodel.master.zip](https://github.com/biobakery/mtx2021/archive/master.zip)
+1. Download the source: [MTX_model.master.zip](https://github.com/biobakery/MTX_model/archive/master.zip)
 2. Decompress the download: 
-    * ``$ tar xzvf MTXmodel-master.zip``
+    * ``$ tar xzvf MTX_model-master.zip``
 3. Install the Bioconductor dependencies edgeR and metagenomeSeq. 
 4. Install the CRAN dependencies:
     * ``$ R -q -e "install.packages(c('lmerTest','pbapply','car','dplyr','vegan','chemometrics','ggplot2','pheatmap','hash','logging','data.table','MuMIn','glmmTMB','MASS','cplm','pscl'), repos='http://cran.r-project.org')"``
 5. Install the MTXmodel package (only required if running as an R function): 
-    * ``$ R CMD INSTALL MTXmodel-master``
+    * ``$ R CMD INSTALL MTX_model-master``
 
 
 ## How to Run ##
