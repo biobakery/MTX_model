@@ -346,7 +346,7 @@ option_not_valid_error <- function(message, valid_options) {
 # Main function (defaults same command line) #
 #######################################################
 
-MTX_model <-
+MTXmodel <-
     function(
         input_data,
         input_metadata,
@@ -1205,9 +1205,9 @@ if (identical(environment(), globalenv()) &&
         )
     }
     
-    # call MTX_model with the command line options
+    # call MTXmodel with the command line options
     fit_data <-
-        MTX_model(
+        MTXmodel(
             positional_args[1],
             positional_args[2],
             positional_args[3],
