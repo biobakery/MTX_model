@@ -1,9 +1,10 @@
-Package: MTX_model
+Package: MTXmodel
+Title: Statistical approaches for differential expression analysis in metatranscriptomics
 Year: 2021
 Version: 1.5.1
 Authors@R: c(
   person("Yancong", "Zhang", email = "zhangyc201211@gmail.com", role = "aut"), 
-  person("Eric", "Franzosa", email = "franzosa@hsph.harvard.edu", role = "aut"),
+  person("Eric", "Franzosa", email = "franzosa@hsph.harvard.edu", role = c("aut", "cre"))
   )
 Depends: R (>= 3.6)
 Description: This R package is built for metatranscriptomics (MTX) modeling based on MaAsLin2. It adds feature-specific covariates to determine multivariable association between metadata and microbial meta-omics features. For example, since RNA abundances from microbial communities are highly affected by underlying differences in taxonomic abundances (i.e. DNA copy number). This package can take the DNA abundance of each feature as a continuous covariate to account for the unique properties of metatranscriptomes. 
@@ -14,6 +15,7 @@ Suggests:
     knitr,
     testthat (>= 2.1.0)
 VignetteBuilder: knitr
-Collate: fit.R utility_scripts.R utility_ext.R viz.R  MTX_model.R
+Collate: fit.R utility_scripts.R utility_ext.R viz.R  MTXmodel.R
 URL: http://huttenhower.sph.harvard.edu/mtx2021
-biocViews: Metagenomics, Software, Microbiome, Normalization
+biocViews: Metatranscriptomics, Software, Microbiome, Normalization
+BugReports: https://github.com/biobakery/mtx2021/issues
