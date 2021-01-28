@@ -1,4 +1,4 @@
-The files in this folder are example input files to run the demo tutorial in the vignette.
+The files in this folder are example input files to run a demo
 
 HMP2_pwyRNA.tsv: is a tab-demilited file with pathways as columns and samples as rows. It is a subset of the pathway file so it just includes the pathway RNA abundances for all samples.
 
