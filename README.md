@@ -7,7 +7,7 @@ This R package is built for metatranscriptomics (MTX) modeling based on [MaAsLin
 If you use the MTXmodel package, please cite our manuscript:
 Zhang et al., "Statistical approaches for differential expression analysis in metatranscriptomics" (In submission).
 
-And feel free to link it to your Methods: http://huttenhower.sph.harvard.edu/mtx2021
+And feel free to link it to your Methods: https://github.com/biobakery/MTX_model
 
 --------------------------------------------
 
