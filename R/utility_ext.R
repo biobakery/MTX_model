@@ -315,7 +315,7 @@ fit.each <- function(
             #}
             
             # min(RNA, DNA) > 0 across sample
-            if (rna_dna_flt == "global") {
+            if (rna_dna_flt == "lenient") {
                 mydna_sum <- sum(mydna)
                 myrna_sum <- sum(myrna)
                 if (as.numeric(min(myrna_sum, mydna_sum)) <= 0) {
@@ -324,7 +324,7 @@ fit.each <- function(
             }
             
             # filter 0/0 cases per sample
-            if (rna_dna_flt == "local") {
+            if (rna_dna_flt == "semi_strict") {
                 mydna_sum <- sum(mydna)
                 myrna_sum <- sum(myrna)
                 if (as.numeric(min(myrna_sum, mydna_sum)) <= 0) {

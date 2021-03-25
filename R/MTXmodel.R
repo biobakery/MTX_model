@@ -30,7 +30,6 @@ for (lib in c('optparse', 'logging', 'data.table', 'dplyr')) {
     suppressPackageStartupMessages(require(lib, character.only = TRUE))
 }
 
-
 ###############################################################
 # If running on the command line, load other modules #
 ###############################################################
@@ -78,7 +77,7 @@ correction_choices <-
 
 # covariate-DNA
 rna_dna_flt_choices <- 
-    c("none", "global", "local", "strict")
+    c("none", "lenient", "semi_strict", "strict")
 
 # set the default run options
 args <- list()
@@ -330,10 +329,10 @@ options <-
         default = args$rna_dna_flt,
         help = paste0("Filtering features/samples based on the detectable abundance of RNA and covariate DNA per feature",
                       " [ Default: %default ]\n",
-					  "\t\t[ Choices: none, global, local, strict]\n",
+					  "\t\t[ Choices: none, lenient, semi_strict, strict]\n",
 					  "\t\tnone: do not apply filtering\n",
-					  "\t\tglobal: ignore features that are not detected at both DNA and RNA levels across all samples\n",
-					  "\t\tlocal: ignore the sample where both feature's DAN and RNA are not detected\n",
+					  "\t\tlenient: ignore features that are not detected at both DNA and RNA levels across all samples\n",
+					  "\t\tsemi_strict: ignore the sample where both feature's DAN and RNA are not detected\n",
 					  "\t\tstrict: ignore the sample where either feature's DAN or RNA is not detected"
         )
     )

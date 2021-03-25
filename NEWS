@@ -1,2 +1,5 @@
+## 2021-03-25 ##
+* Renamed the pre-filtering approaches: 'lenient', 'semi_strict', 'strict'
+
 ## 2020-12-01 ##
-Built with MaAsLin2 version 1.5.1 (12-02-2020)
+* Built with MaAsLin2 version 1.5.1 (12-02-2020)
