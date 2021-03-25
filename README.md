@@ -98,7 +98,7 @@ the HMP2 data which can be downloaded from https://ibdmdb.org/ .
 
 #### Command line ####
 
-``$ MTXmodel.R ../inst/extdata/HMP2_pwyRNA.tsv ../inst/extdata/HMP2_metadata.tsv demo_output --min_abundance 0 --min_prevalence 0.0 --max_significance 0.25 --min_variance 0.0 --correction BH --standardize TRUE --normalization NONE --transform LOG --analysis_method LM --cores 1 --fixed_effects diagnosis,dysbiosisCD,dysbiosisUC,dysbiosisnonIBD,antibiotics,age --random_effects subject,site --plot_heatmap FALSE --plot_scatter FALSE --reference diagnosis,nonIBD --rna_dna_flt local --input_dnadata  ../inst/extdata/HMP2_pwyDNA.tsv
+``$ MTXmodel.R ../inst/extdata/HMP2_pwyRNA.tsv ../inst/extdata/HMP2_metadata.tsv demo_output --min_abundance 0 --min_prevalence 0.0 --max_significance 0.25 --min_variance 0.0 --correction BH --standardize TRUE --normalization NONE --transform LOG --analysis_method LM --cores 1 --fixed_effects diagnosis,dysbiosisCD,dysbiosisUC,dysbiosisnonIBD,antibiotics,age --random_effects subject,site --plot_heatmap FALSE --plot_scatter FALSE --reference diagnosis,nonIBD --rna_dna_flt semi_strict --input_dnadata  ../inst/extdata/HMP2_pwyDNA.tsv
 ``
 
 * Make sure to provide the full path to the MTXmodel executable (i.e., ./R/MTXmodel.R).
@@ -206,8 +206,8 @@ Options:
 
 	-y RNA_DNA_FLT, --rna_dna_flt=RNA_DNA_FLT
 		Filtering features/samples based on the detectable abundance of RNA and covariate DNA per feature [ Default: global ]
-		[ Choices: none, global, local, strict]
+		[ Choices: none, lenient, semi_strict, strict]
 		none: do not apply filtering
-		global: ignore features that are not detected at both DNA and RNA levels across all samples
-		local: ignore the sample where both feature's DAN and feature's RNA are not detected
-		strict: ignore the sample where either feature's DAN or feature's RNA is not detected
+		lenient: ignore features that are not detected at both DNA and RNA levels across all samples
+		semi_strict: ignore the samples where both feature's DAN and feature's RNA are not detected
+		strict: ignore the samples where either feature's DAN or feature's RNA is not detected
