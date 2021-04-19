@@ -1,3 +1,9 @@
+
+# MTXmodel History #
+
+## 2021-04-19 ##
+* Added Logistic Model
+
 ## 2021-03-25 ##
 * Renamed the pre-filtering approaches: 'lenient', 'semi_strict', 'strict'
 

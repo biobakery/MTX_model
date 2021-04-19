@@ -124,6 +124,46 @@ fit.each <- function(
       }
     }
   
+    ################
+    # Logistic Model #
+    ################
+  
+    if (model == "LOGIT") {
+      if (is.null(random_effects_formula)) {
+        model_function <-
+          function(formula, data, na.action) {
+            return(glm(
+              formula,
+              data = data,
+              family = 'binomial',
+              na.action = na.action
+            ))
+          }
+        summary_function <- function(fit) {
+          lm_summary <- summary(fit)$coefficients
+          para <- as.data.frame(lm_summary)[-1, -3]
+          para$name <- rownames(lm_summary)[-1]
+          return(para)
+        }
+      } else {
+        ranef_function <- lme4::ranef
+        model_function <-
+          function(formula, data, na.action) {
+            return(glmer(
+              formula, 
+              data = data,
+              family = 'binomial',
+              na.action = na.action))
+          }
+        summary_function <- function(fit) {
+          lm_summary <- coef(summary(fit))
+          para <- as.data.frame(lm_summary)[-1, -3]
+          para$name <- rownames(lm_summary)[-1]
+          return(para)
+        }
+      }
+    }
+  
     ####################
     # Compound Poisson #
     ####################
