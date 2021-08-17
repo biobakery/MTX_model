@@ -103,8 +103,8 @@ the HMP2 data which can be downloaded from https://ibdmdb.org/ .
 
 * Make sure to provide the full path to the MTXmodel executable (i.e., ./R/MTXmodel.R).
 * In the demo command:
-    * ``HMP2_pwyRNA.tsv`` is the path to your data (or features) file
-    * ``HMP2_pwyDNA.tsv`` is the path to your paired DNA data of features file
+    * ``HMP2_pwyRNA.tsv`` is the path to your MTX-feature data file
+    * ``HMP2_pwyDNA.tsv`` is the path to your paired MGX-feature data file
     * ``HMP2_metadata.tsv`` is the path to your metadata file
     * ``demo_output`` is the path to the folder to write the output
 
