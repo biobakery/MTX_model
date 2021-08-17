@@ -98,7 +98,7 @@ the HMP2 data which can be downloaded from https://ibdmdb.org/ .
 
 #### Command line ####
 
-``$ MTXmodel.R ../inst/extdata/HMP2_pwyRNA.tsv ../inst/extdata/HMP2_metadata.tsv demo_output --min_abundance 0 --min_prevalence 0.0 --max_significance 0.25 --min_variance 0.0 --correction BH --standardize TRUE --normalization NONE --transform LOG --analysis_method LM --cores 1 --fixed_effects diagnosis,dysbiosisCD,dysbiosisUC,dysbiosisnonIBD,antibiotics,age --random_effects subject,site --plot_heatmap FALSE --plot_scatter FALSE --reference diagnosis,nonIBD --rna_dna_flt semi_strict --input_dnadata  ../inst/extdata/HMP2_pwyDNA.tsv
+``$ MTXmodel.R inst/extdata/HMP2_pwyRNA.tsv inst/extdata/HMP2_metadata.tsv demo_output --min_abundance 0 --min_prevalence 0.0 --max_significance 0.25 --min_variance 0.0 --correction BH --standardize TRUE --normalization NONE --transform LOG --analysis_method LM --cores 1 --fixed_effects diagnosis,dysbiosisCD,dysbiosisUC,dysbiosisnonIBD,antibiotics,age --random_effects subject,site --plot_heatmap FALSE --plot_scatter FALSE --reference diagnosis,nonIBD --rna_dna_flt semi_strict --input_dnadata inst/extdata/HMP2_pwyDNA.tsv
 ``
 
 * Make sure to provide the full path to the MTXmodel executable (i.e., ./R/MTXmodel.R).
@@ -114,11 +114,11 @@ the HMP2 data which can be downloaded from https://ibdmdb.org/ .
 ```{r}
 library(MTXmodel)
 input_data <- system.file(
-    'extdata','HMP2_pwyDNA.tsv', package="MTXmodel")
+    'extdata','HMP2_pwyRNA.tsv', package="MTXmodel")
 input_metadata <-system.file(
     'extdata','HMP2_metadata.tsv', package="MTXmodel")
 input_dnadata <- system.file(
-    'extdata','HMP2_pwyRNA.tsv', package="MTXmodel")
+    'extdata','HMP2_pwyDNA.tsv', package="MTXmodel")
 fit_data <- MTXmodel(
     input_data, input_metadata, 'demo_output', transform = "LOG",
     fixed_effects = c('diagnosis', 'dysbiosisnonIBD','dysbiosisUC','dysbiosisCD', 'antibiotics', 'age'),
