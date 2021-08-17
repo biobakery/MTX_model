@@ -22,7 +22,6 @@
 2021-01-26 17:46:45 DEBUG::A total of 803 samples were found in both the data and metadata
 2021-01-26 17:46:45 DEBUG::Reordering data/metadata to use same sample ordering
 2021-01-26 17:46:45 INFO::Formula for random effects: expr ~ (1 | subject) + (1 | site)
-2021-01-26 17:46:45 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age
 2021-01-26 17:46:45 INFO::Filter data based on min abundance and min prevalence
 2021-01-26 17:46:45 INFO::Total samples in data: 803
 2021-01-26 17:46:45 INFO::Min samples required with min abundance for a feature not to be filtered: 0.000000
@@ -34,546 +33,368 @@
 2021-01-26 17:46:45 INFO::Applying z-score to standardize continuous metadata
 2021-01-26 17:46:45 INFO::Running selected transform method: LOG
 2021-01-26 17:46:46 INFO::Running selected analysis method: LM
-2021-01-26 17:46:47 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + X1CMET2_PWY_N10_formyl_tetrahydrofolate_biosyn
 2021-01-26 17:46:47 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + X1CMET2_PWY_N10_formyl_tetrahydrofolate_biosyn
 2021-01-26 17:46:47 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, X1CMET2_PWY_N10_formyl_tetrahydrofolate_biosyn
-2021-01-26 17:46:47 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + ANAEROFRUCAT_PWY_homolactic_fermentation
 2021-01-26 17:46:47 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + ANAEROFRUCAT_PWY_homolactic_fermentation
 2021-01-26 17:46:47 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, ANAEROFRUCAT_PWY_homolactic_fermentation
-2021-01-26 17:46:47 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + ANAGLYCOLYSIS_PWY_glycolysis_III
 2021-01-26 17:46:47 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + ANAGLYCOLYSIS_PWY_glycolysis_III
 2021-01-26 17:46:47 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, ANAGLYCOLYSIS_PWY_glycolysis_III
-2021-01-26 17:46:47 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + ARGININE_SYN4_PWY_L_ornithine_de_novo_biosyn
 2021-01-26 17:46:47 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + ARGININE_SYN4_PWY_L_ornithine_de_novo_biosyn
 2021-01-26 17:46:47 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, ARGININE_SYN4_PWY_L_ornithine_de_novo_biosyn
-2021-01-26 17:46:47 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + ARGSYN_PWY_L_arginine_biosyn_I
 2021-01-26 17:46:47 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + ARGSYN_PWY_L_arginine_biosyn_I
 2021-01-26 17:46:47 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, ARGSYN_PWY_L_arginine_biosyn_I
-2021-01-26 17:46:47 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + ARGSYNBSUB_PWY_L_arginine_biosyn_II
 2021-01-26 17:46:47 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + ARGSYNBSUB_PWY_L_arginine_biosyn_II
 2021-01-26 17:46:47 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, ARGSYNBSUB_PWY_L_arginine_biosyn_II
-2021-01-26 17:46:47 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + ARO_PWY_chorismate_biosyn_I
 2021-01-26 17:46:47 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + ARO_PWY_chorismate_biosyn_I
 2021-01-26 17:46:47 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, ARO_PWY_chorismate_biosyn_I
-2021-01-26 17:46:47 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + ASPASN_PWY_SP_of_L_aspartate__L_asparagine_biosyn
 2021-01-26 17:46:47 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + ASPASN_PWY_SP_of_L_aspartate__L_asparagine_biosyn
 2021-01-26 17:46:47 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, ASPASN_PWY_SP_of_L_aspartate__L_asparagine_biosyn
-2021-01-26 17:46:47 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + BRANCHED_CHAIN_AA_SYN_PWY_SP_of_branched_amino_acid_biosyn
 2021-01-26 17:46:47 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + BRANCHED_CHAIN_AA_SYN_PWY_SP_of_branched_amino_acid_biosyn
 2021-01-26 17:46:47 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, BRANCHED_CHAIN_AA_SYN_PWY_SP_of_branched_amino_acid_biosyn
-2021-01-26 17:46:47 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + CALVIN_PWY_Calvin_Benson_Bassham_cyc
 2021-01-26 17:46:47 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + CALVIN_PWY_Calvin_Benson_Bassham_cyc
 2021-01-26 17:46:47 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, CALVIN_PWY_Calvin_Benson_Bassham_cyc
-2021-01-26 17:46:47 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + CITRULBIO_PWY_L_citrulline_biosyn
 2021-01-26 17:46:47 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + CITRULBIO_PWY_L_citrulline_biosyn
 2021-01-26 17:46:47 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, CITRULBIO_PWY_L_citrulline_biosyn
-2021-01-26 17:46:47 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + COA_PWY_1_coenzyme_A_biosyn_II
 2021-01-26 17:46:47 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + COA_PWY_1_coenzyme_A_biosyn_II
 2021-01-26 17:46:47 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, COA_PWY_1_coenzyme_A_biosyn_II
-2021-01-26 17:46:47 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + COA_PWY_coenzyme_A_biosyn_I
 2021-01-26 17:46:47 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + COA_PWY_coenzyme_A_biosyn_I
 2021-01-26 17:46:47 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, COA_PWY_coenzyme_A_biosyn_I
-2021-01-26 17:46:47 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + COBALSYN_PWY_adenosylcobalamin_salvage_from_cobinamide_I
 2021-01-26 17:46:47 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + COBALSYN_PWY_adenosylcobalamin_salvage_from_cobinamide_I
 2021-01-26 17:46:47 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, COBALSYN_PWY_adenosylcobalamin_salvage_from_cobinamide_I
-2021-01-26 17:46:47 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + COMPLETE_ARO_PWY_SP_of_aromatic_amino_acid_biosyn
 2021-01-26 17:46:47 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + COMPLETE_ARO_PWY_SP_of_aromatic_amino_acid_biosyn
 2021-01-26 17:46:47 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, COMPLETE_ARO_PWY_SP_of_aromatic_amino_acid_biosyn
-2021-01-26 17:46:48 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + DAPLYSINESYN_PWY_L_lysine_biosyn_I
 2021-01-26 17:46:48 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + DAPLYSINESYN_PWY_L_lysine_biosyn_I
 2021-01-26 17:46:48 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, DAPLYSINESYN_PWY_L_lysine_biosyn_I
-2021-01-26 17:46:48 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + DENOVOPURINE2_PWY_SP_of_purine_nt_de_novo_biosyn_II
 2021-01-26 17:46:48 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + DENOVOPURINE2_PWY_SP_of_purine_nt_de_novo_biosyn_II
 2021-01-26 17:46:48 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, DENOVOPURINE2_PWY_SP_of_purine_nt_de_novo_biosyn_II
-2021-01-26 17:46:48 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + DTDPRHAMSYN_PWY_dTDP_L_rhamnose_biosyn_I
 2021-01-26 17:46:48 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + DTDPRHAMSYN_PWY_dTDP_L_rhamnose_biosyn_I
 2021-01-26 17:46:48 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, DTDPRHAMSYN_PWY_dTDP_L_rhamnose_biosyn_I
-2021-01-26 17:46:48 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + FASYN_ELONG_PWY_fatty_acid_elongation__saturated
 2021-01-26 17:46:48 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + FASYN_ELONG_PWY_fatty_acid_elongation__saturated
 2021-01-26 17:46:48 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, FASYN_ELONG_PWY_fatty_acid_elongation__saturated
-2021-01-26 17:46:48 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + FASYN_INITIAL_PWY_SP_of_fatty_acid_biosyn_initiation
 2021-01-26 17:46:48 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + FASYN_INITIAL_PWY_SP_of_fatty_acid_biosyn_initiation
 2021-01-26 17:46:48 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, FASYN_INITIAL_PWY_SP_of_fatty_acid_biosyn_initiation
-2021-01-26 17:46:48 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + FUCCAT_PWY_fucose_deg
 2021-01-26 17:46:48 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + FUCCAT_PWY_fucose_deg
 2021-01-26 17:46:48 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, FUCCAT_PWY_fucose_deg
-2021-01-26 17:46:48 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + GALACT_GLUCUROCAT_PWY_SP_of_hexuronide__hexuronate_deg
 2021-01-26 17:46:48 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + GALACT_GLUCUROCAT_PWY_SP_of_hexuronide__hexuronate_deg
 2021-01-26 17:46:48 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, GALACT_GLUCUROCAT_PWY_SP_of_hexuronide__hexuronate_deg
-2021-01-26 17:46:48 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + GALACTUROCAT_PWY_D_galacturonate_deg_I
 2021-01-26 17:46:48 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + GALACTUROCAT_PWY_D_galacturonate_deg_I
 2021-01-26 17:46:48 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, GALACTUROCAT_PWY_D_galacturonate_deg_I
-2021-01-26 17:46:48 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + GLCMANNANAUT_PWY_SP_of_N_acetylglucosamine_N_acetylmannosamine__N_acetylneuraminate_deg
 2021-01-26 17:46:48 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + GLCMANNANAUT_PWY_SP_of_N_acetylglucosamine_N_acetylmannosamine__N_acetylneuraminate_deg
 2021-01-26 17:46:48 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, GLCMANNANAUT_PWY_SP_of_N_acetylglucosamine_N_acetylmannosamine__N_acetylneuraminate_deg
-2021-01-26 17:46:48 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + GLUCONEO_PWY_gluconeogenesis_I
 2021-01-26 17:46:48 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + GLUCONEO_PWY_gluconeogenesis_I
 2021-01-26 17:46:48 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, GLUCONEO_PWY_gluconeogenesis_I
-2021-01-26 17:46:48 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + GLUCOSE1PMETAB_PWY_glucose__glucose_1_phosphate_deg
 2021-01-26 17:46:48 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + GLUCOSE1PMETAB_PWY_glucose__glucose_1_phosphate_deg
 2021-01-26 17:46:48 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, GLUCOSE1PMETAB_PWY_glucose__glucose_1_phosphate_deg
-2021-01-26 17:46:48 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + GLUCUROCAT_PWY_SP_of_beta_D_glucuronide__D_glucuronate_deg
 2021-01-26 17:46:48 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + GLUCUROCAT_PWY_SP_of_beta_D_glucuronide__D_glucuronate_deg
 2021-01-26 17:46:48 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, GLUCUROCAT_PWY_SP_of_beta_D_glucuronide__D_glucuronate_deg
-2021-01-26 17:46:48 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + GLYCOGENSYNTH_PWY_glycogen_biosyn_I
 2021-01-26 17:46:48 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + GLYCOGENSYNTH_PWY_glycogen_biosyn_I
 2021-01-26 17:46:48 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, GLYCOGENSYNTH_PWY_glycogen_biosyn_I
-2021-01-26 17:46:48 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + GLYCOLYSIS_E_D_SP_of_glycolysis__Entner_Doudoroff
 2021-01-26 17:46:48 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + GLYCOLYSIS_E_D_SP_of_glycolysis__Entner_Doudoroff
 2021-01-26 17:46:48 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, GLYCOLYSIS_E_D_SP_of_glycolysis__Entner_Doudoroff
-2021-01-26 17:46:48 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + GLYCOLYSIS_glycolysis_I
 2021-01-26 17:46:48 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + GLYCOLYSIS_glycolysis_I
 2021-01-26 17:46:48 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, GLYCOLYSIS_glycolysis_I
-2021-01-26 17:46:48 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + GLYOXYLATE_BYPASS_glyoxylate_cyc
 2021-01-26 17:46:48 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + GLYOXYLATE_BYPASS_glyoxylate_cyc
 2021-01-26 17:46:48 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, GLYOXYLATE_BYPASS_glyoxylate_cyc
-2021-01-26 17:46:48 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + HISDEG_PWY_L_histidine_deg_I
 2021-01-26 17:46:48 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + HISDEG_PWY_L_histidine_deg_I
 2021-01-26 17:46:48 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, HISDEG_PWY_L_histidine_deg_I
-2021-01-26 17:46:48 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + HISTSYN_PWY_L_histidine_biosyn
 2021-01-26 17:46:48 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + HISTSYN_PWY_L_histidine_biosyn
 2021-01-26 17:46:48 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, HISTSYN_PWY_L_histidine_biosyn
-2021-01-26 17:46:48 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + ILEUSYN_PWY_L_isoleucine_biosyn_I
 2021-01-26 17:46:48 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + ILEUSYN_PWY_L_isoleucine_biosyn_I
 2021-01-26 17:46:48 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, ILEUSYN_PWY_L_isoleucine_biosyn_I
-2021-01-26 17:46:49 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + MET_SAM_PWY_SP_of_S_adenosyl_L_methionine_biosyn
 2021-01-26 17:46:49 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + MET_SAM_PWY_SP_of_S_adenosyl_L_methionine_biosyn
 2021-01-26 17:46:49 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, MET_SAM_PWY_SP_of_S_adenosyl_L_methionine_biosyn
-2021-01-26 17:46:49 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + METSYN_PWY_L_homoserine__L_methionine_biosyn
 2021-01-26 17:46:49 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + METSYN_PWY_L_homoserine__L_methionine_biosyn
 2021-01-26 17:46:49 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, METSYN_PWY_L_homoserine__L_methionine_biosyn
-2021-01-26 17:46:49 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + NAGLIPASYN_PWY_lipid_IVA_biosyn
 2021-01-26 17:46:49 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + NAGLIPASYN_PWY_lipid_IVA_biosyn
 2021-01-26 17:46:49 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, NAGLIPASYN_PWY_lipid_IVA_biosyn
-2021-01-26 17:46:49 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + NONMEVIPP_PWY_methylerythritol_phosphate_pwy_I
 2021-01-26 17:46:49 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + NONMEVIPP_PWY_methylerythritol_phosphate_pwy_I
 2021-01-26 17:46:49 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, NONMEVIPP_PWY_methylerythritol_phosphate_pwy_I
-2021-01-26 17:46:49 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + NONOXIPENT_PWY_pentose_phosphate_pwy
 2021-01-26 17:46:49 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + NONOXIPENT_PWY_pentose_phosphate_pwy
 2021-01-26 17:46:49 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, NONOXIPENT_PWY_pentose_phosphate_pwy
-2021-01-26 17:46:49 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + OANTIGEN_PWY_O_antigen_building_blocks_biosyn
 2021-01-26 17:46:49 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + OANTIGEN_PWY_O_antigen_building_blocks_biosyn
 2021-01-26 17:46:49 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, OANTIGEN_PWY_O_antigen_building_blocks_biosyn
-2021-01-26 17:46:49 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + P105_PWY_TCA_cyc_IV
 2021-01-26 17:46:49 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + P105_PWY_TCA_cyc_IV
 2021-01-26 17:46:49 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, P105_PWY_TCA_cyc_IV
-2021-01-26 17:46:49 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + P108_PWY_pyruvate_fermentation_to_propanoate_I
 2021-01-26 17:46:49 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + P108_PWY_pyruvate_fermentation_to_propanoate_I
 2021-01-26 17:46:49 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, P108_PWY_pyruvate_fermentation_to_propanoate_I
-2021-01-26 17:46:49 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + P161_PWY_acetylene_deg
 2021-01-26 17:46:49 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + P161_PWY_acetylene_deg
 2021-01-26 17:46:49 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, P161_PWY_acetylene_deg
-2021-01-26 17:46:49 WARNING::Feature name not found in dnadata so not applied to formula as fixed effect: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site
-2021-01-26 17:46:49 WARNING::Feature name not found in dnadata so not applied to formula as fixed effect: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site
-2021-01-26 17:46:49 WARNING::Feature name not found in dnadata so not applied to formula as fixed effect: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site
-2021-01-26 17:46:49 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + P42_PWY_incomplete_reductive_TCA_cyc
+2021-01-26 17:46:49 WARNING::Feature name not found in dnadata so not applied to formula with effects: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site
+2021-01-26 17:46:49 WARNING::Feature name not found in dnadata so not applied to formula with effects: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site
+2021-01-26 17:46:49 WARNING::Feature name not found in dnadata so not applied to formula with effects: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site
 2021-01-26 17:46:49 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + P42_PWY_incomplete_reductive_TCA_cyc
 2021-01-26 17:46:49 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, P42_PWY_incomplete_reductive_TCA_cyc
-2021-01-26 17:46:49 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + P441_PWY_SP_of_N_acetylneuraminate_deg
 2021-01-26 17:46:49 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + P441_PWY_SP_of_N_acetylneuraminate_deg
 2021-01-26 17:46:49 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, P441_PWY_SP_of_N_acetylneuraminate_deg
-2021-01-26 17:46:49 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + P461_PWY_hexitol_fermentation_to_lactate_formate_ethanol__acetate
 2021-01-26 17:46:49 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + P461_PWY_hexitol_fermentation_to_lactate_formate_ethanol__acetate
 2021-01-26 17:46:49 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, P461_PWY_hexitol_fermentation_to_lactate_formate_ethanol__acetate
-2021-01-26 17:46:49 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PANTO_PWY_phosphopantothenate_biosyn_I
 2021-01-26 17:46:49 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PANTO_PWY_phosphopantothenate_biosyn_I
 2021-01-26 17:46:49 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PANTO_PWY_phosphopantothenate_biosyn_I
-2021-01-26 17:46:49 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PANTOSYN_PWY_pantothenate__coenzyme_A_biosyn_I
 2021-01-26 17:46:49 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PANTOSYN_PWY_pantothenate__coenzyme_A_biosyn_I
 2021-01-26 17:46:49 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PANTOSYN_PWY_pantothenate__coenzyme_A_biosyn_I
-2021-01-26 17:46:49 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PENTOSE_P_PWY_pentose_phosphate_pwy
 2021-01-26 17:46:49 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PENTOSE_P_PWY_pentose_phosphate_pwy
 2021-01-26 17:46:49 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PENTOSE_P_PWY_pentose_phosphate_pwy
-2021-01-26 17:46:49 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PEPTIDOGLYCANSYN_PWY_peptidoglycan_biosyn_I
 2021-01-26 17:46:49 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PEPTIDOGLYCANSYN_PWY_peptidoglycan_biosyn_I
 2021-01-26 17:46:49 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PEPTIDOGLYCANSYN_PWY_peptidoglycan_biosyn_I
-2021-01-26 17:46:49 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PHOSLIPSYN_PWY_SP_of_phospholipid_biosyn_I
 2021-01-26 17:46:49 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PHOSLIPSYN_PWY_SP_of_phospholipid_biosyn_I
 2021-01-26 17:46:49 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PHOSLIPSYN_PWY_SP_of_phospholipid_biosyn_I
-2021-01-26 17:46:49 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PRPP_PWY_SP_of_histidine_purine__pyrimidine_biosyn
 2021-01-26 17:46:49 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PRPP_PWY_SP_of_histidine_purine__pyrimidine_biosyn
 2021-01-26 17:46:49 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PRPP_PWY_SP_of_histidine_purine__pyrimidine_biosyn
-2021-01-26 17:46:49 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_1042_glycolysis_IV
 2021-01-26 17:46:49 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_1042_glycolysis_IV
 2021-01-26 17:46:49 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_1042_glycolysis_IV
-2021-01-26 17:46:49 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_1269_CMP_3_deoxy_D_manno_octulosonate_biosyn_I
 2021-01-26 17:46:49 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_1269_CMP_3_deoxy_D_manno_octulosonate_biosyn_I
 2021-01-26 17:46:49 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_1269_CMP_3_deoxy_D_manno_octulosonate_biosyn_I
-2021-01-26 17:46:49 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_2941_L_lysine_biosyn_II
 2021-01-26 17:46:49 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_2941_L_lysine_biosyn_II
 2021-01-26 17:46:49 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_2941_L_lysine_biosyn_II
-2021-01-26 17:46:49 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_2942_L_lysine_biosyn_III
 2021-01-26 17:46:49 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_2942_L_lysine_biosyn_III
 2021-01-26 17:46:49 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_2942_L_lysine_biosyn_III
-2021-01-26 17:46:50 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_3001_SP_of_L_isoleucine_biosyn_I
 2021-01-26 17:46:50 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_3001_SP_of_L_isoleucine_biosyn_I
 2021-01-26 17:46:50 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_3001_SP_of_L_isoleucine_biosyn_I
 2021-01-26 17:46:50 WARNING::Feature name not found in dnadata so not applied to formula as fixed effect: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site
 2021-01-26 17:46:50 WARNING::Feature name not found in dnadata so not applied to formula as fixed effect: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site
-2021-01-26 17:46:50 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_3841_folate_transformations_II
 2021-01-26 17:46:50 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_3841_folate_transformations_II
 2021-01-26 17:46:50 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_3841_folate_transformations_II
-2021-01-26 17:46:50 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_4041_beta_glutamyl_cyc
 2021-01-26 17:46:50 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_4041_beta_glutamyl_cyc
 2021-01-26 17:46:50 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_4041_beta_glutamyl_cyc
-2021-01-26 17:46:50 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_4242_pantothenate__coenzyme_A_biosyn_III
 2021-01-26 17:46:50 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_4242_pantothenate__coenzyme_A_biosyn_III
 2021-01-26 17:46:50 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_4242_pantothenate__coenzyme_A_biosyn_III
-2021-01-26 17:46:50 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_4981_L_proline_biosyn_II
 2021-01-26 17:46:50 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_4981_L_proline_biosyn_II
 2021-01-26 17:46:50 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_4981_L_proline_biosyn_II
-2021-01-26 17:46:50 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_4984_urea_cyc
 2021-01-26 17:46:50 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_4984_urea_cyc
 2021-01-26 17:46:50 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_4984_urea_cyc
-2021-01-26 17:46:50 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5030_L_histidine_deg_III
 2021-01-26 17:46:50 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5030_L_histidine_deg_III
 2021-01-26 17:46:50 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_5030_L_histidine_deg_III
-2021-01-26 17:46:50 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5083_NAD_NADH_phosphorylation__dephosphorylation
 2021-01-26 17:46:50 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5083_NAD_NADH_phosphorylation__dephosphorylation
 2021-01-26 17:46:50 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_5083_NAD_NADH_phosphorylation__dephosphorylation
-2021-01-26 17:46:50 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5097_L_lysine_biosyn_VI
 2021-01-26 17:46:50 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5097_L_lysine_biosyn_VI
 2021-01-26 17:46:50 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_5097_L_lysine_biosyn_VI
-2021-01-26 17:46:50 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5100_pyruvate_fermentation_to_acetate__lactate_II
 2021-01-26 17:46:50 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5100_pyruvate_fermentation_to_acetate__lactate_II
 2021-01-26 17:46:50 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_5100_pyruvate_fermentation_to_acetate__lactate_II
-2021-01-26 17:46:50 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5101_L_isoleucine_biosyn_II
 2021-01-26 17:46:50 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5101_L_isoleucine_biosyn_II
 2021-01-26 17:46:50 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_5101_L_isoleucine_biosyn_II
-2021-01-26 17:46:50 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5103_L_isoleucine_biosyn_III
 2021-01-26 17:46:50 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5103_L_isoleucine_biosyn_III
 2021-01-26 17:46:50 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_5103_L_isoleucine_biosyn_III
-2021-01-26 17:46:50 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5104_L_isoleucine_biosyn_IV
 2021-01-26 17:46:50 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5104_L_isoleucine_biosyn_IV
 2021-01-26 17:46:50 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_5104_L_isoleucine_biosyn_IV
-2021-01-26 17:46:50 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5154_L_arginine_biosyn_III
 2021-01-26 17:46:50 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5154_L_arginine_biosyn_III
 2021-01-26 17:46:50 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_5154_L_arginine_biosyn_III
-2021-01-26 17:46:50 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5173_SP_of_acetyl_CoA_biosyn
 2021-01-26 17:46:50 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5173_SP_of_acetyl_CoA_biosyn
 2021-01-26 17:46:50 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_5173_SP_of_acetyl_CoA_biosyn
-2021-01-26 17:46:50 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5177_glutaryl_CoA_deg
 2021-01-26 17:46:50 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5177_glutaryl_CoA_deg
 2021-01-26 17:46:50 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_5177_glutaryl_CoA_deg
-2021-01-26 17:46:50 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5188_tetrapyrrole_biosyn_I
 2021-01-26 17:46:50 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5188_tetrapyrrole_biosyn_I
 2021-01-26 17:46:50 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_5188_tetrapyrrole_biosyn_I
-2021-01-26 17:46:50 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5347_SP_of_L_methionine_biosyn
 2021-01-26 17:46:50 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5347_SP_of_L_methionine_biosyn
 2021-01-26 17:46:50 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_5347_SP_of_L_methionine_biosyn
-2021-01-26 17:46:50 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5484_glycolysis_II
 2021-01-26 17:46:50 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5484_glycolysis_II
 2021-01-26 17:46:50 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_5484_glycolysis_II
-2021-01-26 17:46:50 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5659_GDP_mannose_biosyn
 2021-01-26 17:46:50 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5659_GDP_mannose_biosyn
 2021-01-26 17:46:50 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_5659_GDP_mannose_biosyn
-2021-01-26 17:46:50 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5667_CDP_diacylglycerol_biosyn_I
 2021-01-26 17:46:50 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5667_CDP_diacylglycerol_biosyn_I
 2021-01-26 17:46:50 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_5667_CDP_diacylglycerol_biosyn_I
-2021-01-26 17:46:50 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5676_acetyl_CoA_fermentation_to_butanoate_II
 2021-01-26 17:46:50 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5676_acetyl_CoA_fermentation_to_butanoate_II
 2021-01-26 17:46:50 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_5676_acetyl_CoA_fermentation_to_butanoate_II
-2021-01-26 17:46:50 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5686_UMP_biosyn
 2021-01-26 17:46:50 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5686_UMP_biosyn
 2021-01-26 17:46:50 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_5686_UMP_biosyn
-2021-01-26 17:46:51 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5690_TCA_cyc_II
 2021-01-26 17:46:51 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5690_TCA_cyc_II
 2021-01-26 17:46:51 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_5690_TCA_cyc_II
-2021-01-26 17:46:51 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5695_urate_biosyn_inosine_5_phosphate_deg
 2021-01-26 17:46:51 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5695_urate_biosyn_inosine_5_phosphate_deg
 2021-01-26 17:46:51 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_5695_urate_biosyn_inosine_5_phosphate_deg
-2021-01-26 17:46:51 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5723_Rubisco_shunt
 2021-01-26 17:46:51 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5723_Rubisco_shunt
 2021-01-26 17:46:51 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_5723_Rubisco_shunt
-2021-01-26 17:46:51 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5913_TCA_cyc_VI
 2021-01-26 17:46:51 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5913_TCA_cyc_VI
 2021-01-26 17:46:51 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_5913_TCA_cyc_VI
-2021-01-26 17:46:51 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5971_palmitate_biosyn_II
 2021-01-26 17:46:51 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5971_palmitate_biosyn_II
 2021-01-26 17:46:51 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_5971_palmitate_biosyn_II
-2021-01-26 17:46:51 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5973_cis_vaccenate_biosyn
 2021-01-26 17:46:51 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5973_cis_vaccenate_biosyn
 2021-01-26 17:46:51 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_5973_cis_vaccenate_biosyn
-2021-01-26 17:46:51 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5989_stearate_biosyn_II
 2021-01-26 17:46:51 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_5989_stearate_biosyn_II
 2021-01-26 17:46:51 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_5989_stearate_biosyn_II
-2021-01-26 17:46:51 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6121_5_aminoimidazole_rnt_biosyn_I
 2021-01-26 17:46:51 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6121_5_aminoimidazole_rnt_biosyn_I
 2021-01-26 17:46:51 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_6121_5_aminoimidazole_rnt_biosyn_I
-2021-01-26 17:46:51 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6122_5_aminoimidazole_rnt_biosyn_II
 2021-01-26 17:46:51 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6122_5_aminoimidazole_rnt_biosyn_II
 2021-01-26 17:46:51 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_6122_5_aminoimidazole_rnt_biosyn_II
-2021-01-26 17:46:51 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6123_inosine_5_phosphate_biosyn_I
 2021-01-26 17:46:51 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6123_inosine_5_phosphate_biosyn_I
 2021-01-26 17:46:51 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_6123_inosine_5_phosphate_biosyn_I
-2021-01-26 17:46:51 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6124_inosine_5_phosphate_biosyn_II
 2021-01-26 17:46:51 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6124_inosine_5_phosphate_biosyn_II
 2021-01-26 17:46:51 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_6124_inosine_5_phosphate_biosyn_II
-2021-01-26 17:46:51 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6125_SP_of_guanosine_nt_de_novo_biosyn_II
 2021-01-26 17:46:51 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6125_SP_of_guanosine_nt_de_novo_biosyn_II
 2021-01-26 17:46:51 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_6125_SP_of_guanosine_nt_de_novo_biosyn_II
-2021-01-26 17:46:51 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6126_SP_of_adenosine_nt_de_novo_biosyn_II
 2021-01-26 17:46:51 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6126_SP_of_adenosine_nt_de_novo_biosyn_II
 2021-01-26 17:46:51 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_6126_SP_of_adenosine_nt_de_novo_biosyn_II
-2021-01-26 17:46:51 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6147_6_hydroxymethyl_dihydropterin_diphosphate_biosyn_I
 2021-01-26 17:46:51 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6147_6_hydroxymethyl_dihydropterin_diphosphate_biosyn_I
 2021-01-26 17:46:51 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_6147_6_hydroxymethyl_dihydropterin_diphosphate_biosyn_I
-2021-01-26 17:46:51 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6151_S_adenosyl_L_methionine_cyc_I
 2021-01-26 17:46:51 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6151_S_adenosyl_L_methionine_cyc_I
 2021-01-26 17:46:51 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_6151_S_adenosyl_L_methionine_cyc_I
-2021-01-26 17:46:51 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6163_chorismate_biosyn_from_3_dehydroquinate
 2021-01-26 17:46:51 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6163_chorismate_biosyn_from_3_dehydroquinate
 2021-01-26 17:46:51 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_6163_chorismate_biosyn_from_3_dehydroquinate
-2021-01-26 17:46:51 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6168_flavin_biosyn_III
 2021-01-26 17:46:51 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6168_flavin_biosyn_III
 2021-01-26 17:46:51 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_6168_flavin_biosyn_III
-2021-01-26 17:46:51 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_621_sucrose_deg_III
 2021-01-26 17:46:51 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_621_sucrose_deg_III
 2021-01-26 17:46:51 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_621_sucrose_deg_III
-2021-01-26 17:46:51 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6270_isoprene_biosyn_I
 2021-01-26 17:46:51 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6270_isoprene_biosyn_I
 2021-01-26 17:46:51 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_6270_isoprene_biosyn_I
-2021-01-26 17:46:51 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6277_SP_of_5_aminoimidazole_rnt_biosyn
 2021-01-26 17:46:51 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6277_SP_of_5_aminoimidazole_rnt_biosyn
 2021-01-26 17:46:51 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_6277_SP_of_5_aminoimidazole_rnt_biosyn
-2021-01-26 17:46:51 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6282_palmitoleate_biosyn_I
 2021-01-26 17:46:51 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6282_palmitoleate_biosyn_I
 2021-01-26 17:46:51 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_6282_palmitoleate_biosyn_I
-2021-01-26 17:46:51 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6317_galactose_deg_I
 2021-01-26 17:46:51 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6317_galactose_deg_I
 2021-01-26 17:46:51 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_6317_galactose_deg_I
-2021-01-26 17:46:51 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6353_purine_nt_deg_II
 2021-01-26 17:46:51 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6353_purine_nt_deg_II
 2021-01-26 17:46:51 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_6353_purine_nt_deg_II
-2021-01-26 17:46:52 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6385_peptidoglycan_biosyn_III
 2021-01-26 17:46:52 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6385_peptidoglycan_biosyn_III
 2021-01-26 17:46:52 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_6385_peptidoglycan_biosyn_III
-2021-01-26 17:46:52 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6386_UDP_N_acetylmuramoyl_pentapeptide_biosyn_II
 2021-01-26 17:46:52 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6386_UDP_N_acetylmuramoyl_pentapeptide_biosyn_II
 2021-01-26 17:46:52 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_6386_UDP_N_acetylmuramoyl_pentapeptide_biosyn_II
-2021-01-26 17:46:52 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6387_UDP_N_acetylmuramoyl_pentapeptide_biosyn_I
 2021-01-26 17:46:52 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6387_UDP_N_acetylmuramoyl_pentapeptide_biosyn_I
 2021-01-26 17:46:52 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_6387_UDP_N_acetylmuramoyl_pentapeptide_biosyn_I
-2021-01-26 17:46:52 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6507_4_deoxy_L_threo_hex_4_enopyranuronate_deg
 2021-01-26 17:46:52 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6507_4_deoxy_L_threo_hex_4_enopyranuronate_deg
 2021-01-26 17:46:52 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_6507_4_deoxy_L_threo_hex_4_enopyranuronate_deg
-2021-01-26 17:46:52 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6527_stachyose_deg
 2021-01-26 17:46:52 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6527_stachyose_deg
 2021-01-26 17:46:52 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_6527_stachyose_deg
-2021-01-26 17:46:52 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6545_pyrimidine_dnt_de_novo_biosyn_III
 2021-01-26 17:46:52 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6545_pyrimidine_dnt_de_novo_biosyn_III
 2021-01-26 17:46:52 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_6545_pyrimidine_dnt_de_novo_biosyn_III
 2021-01-26 17:46:52 WARNING::Feature name not found in dnadata so not applied to formula as fixed effect: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site
-2021-01-26 17:46:52 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6608_guanosine_nt_deg_III
 2021-01-26 17:46:52 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6608_guanosine_nt_deg_III
 2021-01-26 17:46:52 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_6608_guanosine_nt_deg_III
-2021-01-26 17:46:52 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6609_adenine__adenosine_salvage_III
 2021-01-26 17:46:52 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6609_adenine__adenosine_salvage_III
 2021-01-26 17:46:52 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_6609_adenine__adenosine_salvage_III
-2021-01-26 17:46:52 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6700_queuosine_biosyn
 2021-01-26 17:46:52 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6700_queuosine_biosyn
 2021-01-26 17:46:52 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_6700_queuosine_biosyn
-2021-01-26 17:46:52 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6703_preQ0_biosyn
 2021-01-26 17:46:52 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6703_preQ0_biosyn
 2021-01-26 17:46:52 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_6703_preQ0_biosyn
-2021-01-26 17:46:52 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6737_starch_deg_V
 2021-01-26 17:46:52 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6737_starch_deg_V
 2021-01-26 17:46:52 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_6737_starch_deg_V
-2021-01-26 17:46:52 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6897_thiamin_salvage_II
 2021-01-26 17:46:52 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6897_thiamin_salvage_II
 2021-01-26 17:46:52 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_6897_thiamin_salvage_II
-2021-01-26 17:46:52 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6901_SP_of_glucose__xylose_deg
 2021-01-26 17:46:52 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6901_SP_of_glucose__xylose_deg
 2021-01-26 17:46:52 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_6901_SP_of_glucose__xylose_deg
-2021-01-26 17:46:52 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6936_seleno_amino_acid_biosyn
 2021-01-26 17:46:52 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6936_seleno_amino_acid_biosyn
 2021-01-26 17:46:52 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_6936_seleno_amino_acid_biosyn
-2021-01-26 17:46:52 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6969_TCA_cyc_V
 2021-01-26 17:46:52 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_6969_TCA_cyc_V
 2021-01-26 17:46:52 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_6969_TCA_cyc_V
-2021-01-26 17:46:52 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7111_pyruvate_fermentation_to_isobutanol
 2021-01-26 17:46:52 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7111_pyruvate_fermentation_to_isobutanol
 2021-01-26 17:46:52 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_7111_pyruvate_fermentation_to_isobutanol
-2021-01-26 17:46:52 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7184_pyrimidine_dnt_de_novo_biosyn_I
 2021-01-26 17:46:52 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7184_pyrimidine_dnt_de_novo_biosyn_I
 2021-01-26 17:46:52 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_7184_pyrimidine_dnt_de_novo_biosyn_I
-2021-01-26 17:46:52 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7187_pyrimidine_dnt_de_novo_biosyn_II
 2021-01-26 17:46:52 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7187_pyrimidine_dnt_de_novo_biosyn_II
 2021-01-26 17:46:52 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_7187_pyrimidine_dnt_de_novo_biosyn_II
-2021-01-26 17:46:52 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7196_SP_of_pyrimidine_rns_salvage
 2021-01-26 17:46:52 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7196_SP_of_pyrimidine_rns_salvage
 2021-01-26 17:46:52 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_7196_SP_of_pyrimidine_rns_salvage
-2021-01-26 17:46:53 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7197_pyrimidine_dnt_phosphorylation
 2021-01-26 17:46:53 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7197_pyrimidine_dnt_phosphorylation
 2021-01-26 17:46:53 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_7197_pyrimidine_dnt_phosphorylation
-2021-01-26 17:46:53 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7199_pyrimidine_dns_salvage
 2021-01-26 17:46:53 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7199_pyrimidine_dns_salvage
 2021-01-26 17:46:53 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_7199_pyrimidine_dns_salvage
-2021-01-26 17:46:53 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7208_SP_of_pyrimidine_nucleobases_salvage
 2021-01-26 17:46:53 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7208_SP_of_pyrimidine_nucleobases_salvage
 2021-01-26 17:46:53 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_7208_SP_of_pyrimidine_nucleobases_salvage
-2021-01-26 17:46:53 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7211_SP_of_pyrimidine_dnt_de_novo_biosyn
 2021-01-26 17:46:53 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7211_SP_of_pyrimidine_dnt_de_novo_biosyn
 2021-01-26 17:46:53 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_7211_SP_of_pyrimidine_dnt_de_novo_biosyn
-2021-01-26 17:46:53 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7219_adenosine_rnt_de_novo_biosyn
 2021-01-26 17:46:53 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7219_adenosine_rnt_de_novo_biosyn
 2021-01-26 17:46:53 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_7219_adenosine_rnt_de_novo_biosyn
-2021-01-26 17:46:53 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7220_adenosine_dnt_de_novo_biosyn_II
 2021-01-26 17:46:53 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7220_adenosine_dnt_de_novo_biosyn_II
 2021-01-26 17:46:53 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_7220_adenosine_dnt_de_novo_biosyn_II
-2021-01-26 17:46:53 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7221_guanosine_rnt_de_novo_biosyn
 2021-01-26 17:46:53 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7221_guanosine_rnt_de_novo_biosyn
 2021-01-26 17:46:53 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_7221_guanosine_rnt_de_novo_biosyn
-2021-01-26 17:46:53 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7222_guanosine_dnt_de_novo_biosyn_II
 2021-01-26 17:46:53 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7222_guanosine_dnt_de_novo_biosyn_II
 2021-01-26 17:46:53 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_7222_guanosine_dnt_de_novo_biosyn_II
-2021-01-26 17:46:53 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7228_SP_of_guanosine_nt_de_novo_biosyn_I
 2021-01-26 17:46:53 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7228_SP_of_guanosine_nt_de_novo_biosyn_I
 2021-01-26 17:46:53 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_7228_SP_of_guanosine_nt_de_novo_biosyn_I
-2021-01-26 17:46:53 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7229_SP_of_adenosine_nt_de_novo_biosyn_I
 2021-01-26 17:46:53 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7229_SP_of_adenosine_nt_de_novo_biosyn_I
 2021-01-26 17:46:53 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_7229_SP_of_adenosine_nt_de_novo_biosyn_I
-2021-01-26 17:46:53 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7234_inosine_5_phosphate_biosyn_III
 2021-01-26 17:46:53 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7234_inosine_5_phosphate_biosyn_III
 2021-01-26 17:46:53 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_7234_inosine_5_phosphate_biosyn_III
-2021-01-26 17:46:53 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7237_myo__chiro__scillo_inositol_deg
 2021-01-26 17:46:53 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7237_myo__chiro__scillo_inositol_deg
 2021-01-26 17:46:53 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_7237_myo__chiro__scillo_inositol_deg
-2021-01-26 17:46:53 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7242_D_fructuronate_deg
 2021-01-26 17:46:53 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7242_D_fructuronate_deg
 2021-01-26 17:46:53 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_7242_D_fructuronate_deg
-2021-01-26 17:46:53 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_724_SP_of_L_lysine_L_threonine__L_methionine_biosyn_II
 2021-01-26 17:46:53 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_724_SP_of_L_lysine_L_threonine__L_methionine_biosyn_II
 2021-01-26 17:46:53 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_724_SP_of_L_lysine_L_threonine__L_methionine_biosyn_II
 2021-01-26 17:46:53 WARNING::Feature name not found in dnadata so not applied to formula as fixed effect: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site
-2021-01-26 17:46:53 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7282_4_amino_2_methyl_5_phosphomethylpyrimidine_biosyn
 2021-01-26 17:46:53 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7282_4_amino_2_methyl_5_phosphomethylpyrimidine_biosyn
 2021-01-26 17:46:53 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_7282_4_amino_2_methyl_5_phosphomethylpyrimidine_biosyn
-2021-01-26 17:46:53 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7323_SP_of_GDP_mannose_derived_O_antigen_building_blocks_biosyn
 2021-01-26 17:46:53 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7323_SP_of_GDP_mannose_derived_O_antigen_building_blocks_biosyn
 2021-01-26 17:46:53 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_7323_SP_of_GDP_mannose_derived_O_antigen_building_blocks_biosyn
 2021-01-26 17:46:53 WARNING::Feature name not found in dnadata so not applied to formula as fixed effect: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site
-2021-01-26 17:46:53 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7357_thiamin_formation_from_pyrithiamine__oxythiamine
 2021-01-26 17:46:53 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7357_thiamin_formation_from_pyrithiamine__oxythiamine
 2021-01-26 17:46:53 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_7357_thiamin_formation_from_pyrithiamine__oxythiamine
-2021-01-26 17:46:53 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7383_anaerobic_energy_metabolism
 2021-01-26 17:46:53 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7383_anaerobic_energy_metabolism
 2021-01-26 17:46:53 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_7383_anaerobic_energy_metabolism
-2021-01-26 17:46:53 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7388_octanoyl_acyl_carrier_protein_biosyn
 2021-01-26 17:46:53 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7388_octanoyl_acyl_carrier_protein_biosyn
 2021-01-26 17:46:53 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_7388_octanoyl_acyl_carrier_protein_biosyn
-2021-01-26 17:46:54 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7400_L_arginine_biosyn_IV
 2021-01-26 17:46:54 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7400_L_arginine_biosyn_IV
 2021-01-26 17:46:54 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_7400_L_arginine_biosyn_IV
-2021-01-26 17:46:54 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7456_mannan_deg
 2021-01-26 17:46:54 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7456_mannan_deg
 2021-01-26 17:46:54 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_7456_mannan_deg
-2021-01-26 17:46:54 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7539_6_hydroxymethyl_dihydropterin_diphosphate_biosyn_III
 2021-01-26 17:46:54 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7539_6_hydroxymethyl_dihydropterin_diphosphate_biosyn_III
 2021-01-26 17:46:54 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_7539_6_hydroxymethyl_dihydropterin_diphosphate_biosyn_III
-2021-01-26 17:46:54 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7560_methylerythritol_phosphate_pwy_II
 2021-01-26 17:46:54 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7560_methylerythritol_phosphate_pwy_II
 2021-01-26 17:46:54 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_7560_methylerythritol_phosphate_pwy_II
-2021-01-26 17:46:54 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7663_gondoate_biosyn
 2021-01-26 17:46:54 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7663_gondoate_biosyn
 2021-01-26 17:46:54 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_7663_gondoate_biosyn
-2021-01-26 17:46:54 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7664_oleate_biosyn_IV
 2021-01-26 17:46:54 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_7664_oleate_biosyn_IV
 2021-01-26 17:46:54 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_7664_oleate_biosyn_IV
-2021-01-26 17:46:54 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_841_SP_of_purine_nt_de_novo_biosyn_I
 2021-01-26 17:46:54 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY_841_SP_of_purine_nt_de_novo_biosyn_I
 2021-01-26 17:46:54 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY_841_SP_of_purine_nt_de_novo_biosyn_I
-2021-01-26 17:46:54 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY0_1261_anhydromuropeptides_recycling
 2021-01-26 17:46:54 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY0_1261_anhydromuropeptides_recycling
 2021-01-26 17:46:54 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY0_1261_anhydromuropeptides_recycling
-2021-01-26 17:46:54 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY0_1296_purine_rns_deg
 2021-01-26 17:46:54 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY0_1296_purine_rns_deg
 2021-01-26 17:46:54 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY0_1296_purine_rns_deg
-2021-01-26 17:46:54 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY0_1297_SP_of_purine_dns_deg
 2021-01-26 17:46:54 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY0_1297_SP_of_purine_dns_deg
 2021-01-26 17:46:54 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY0_1297_SP_of_purine_dns_deg
-2021-01-26 17:46:54 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY0_1298_SP_of_pyrimidine_dns_deg
 2021-01-26 17:46:54 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY0_1298_SP_of_pyrimidine_dns_deg
 2021-01-26 17:46:54 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY0_1298_SP_of_pyrimidine_dns_deg
-2021-01-26 17:46:54 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY0_1319_CDP_diacylglycerol_biosyn_II
 2021-01-26 17:46:54 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY0_1319_CDP_diacylglycerol_biosyn_II
 2021-01-26 17:46:54 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY0_1319_CDP_diacylglycerol_biosyn_II
-2021-01-26 17:46:54 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY0_1479_tRNA_processing
 2021-01-26 17:46:54 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY0_1479_tRNA_processing
 2021-01-26 17:46:54 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY0_1479_tRNA_processing
-2021-01-26 17:46:54 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY0_1586_peptidoglycan_maturation
 2021-01-26 17:46:54 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY0_1586_peptidoglycan_maturation
 2021-01-26 17:46:54 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY0_1586_peptidoglycan_maturation
-2021-01-26 17:46:54 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY0_162_SP_of_pyrimidine_rnt_de_novo_biosyn
 2021-01-26 17:46:54 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY0_162_SP_of_pyrimidine_rnt_de_novo_biosyn
 2021-01-26 17:46:54 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY0_162_SP_of_pyrimidine_rnt_de_novo_biosyn
-2021-01-26 17:46:54 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY0_166_SP_of_pyrimidine_dnt_de_novo_biosyn
 2021-01-26 17:46:54 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY0_166_SP_of_pyrimidine_dnt_de_novo_biosyn
 2021-01-26 17:46:54 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY0_166_SP_of_pyrimidine_dnt_de_novo_biosyn
-2021-01-26 17:46:54 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY0_845_SP_of_pyridoxal_5_phosphate_biosyn__salvage
 2021-01-26 17:46:54 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY0_845_SP_of_pyridoxal_5_phosphate_biosyn__salvage
 2021-01-26 17:46:54 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY0_845_SP_of_pyridoxal_5_phosphate_biosyn__salvage
-2021-01-26 17:46:54 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY0_862_dodec_5_enoate_biosyn
 2021-01-26 17:46:54 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY0_862_dodec_5_enoate_biosyn
 2021-01-26 17:46:54 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY0_862_dodec_5_enoate_biosyn
-2021-01-26 17:46:54 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY4FS_7_phosphatidylglycerol_biosyn_I
 2021-01-26 17:46:54 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY4FS_7_phosphatidylglycerol_biosyn_I
 2021-01-26 17:46:54 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY4FS_7_phosphatidylglycerol_biosyn_I
-2021-01-26 17:46:54 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY4FS_8_phosphatidylglycerol_biosyn_II
 2021-01-26 17:46:55 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY4FS_8_phosphatidylglycerol_biosyn_II
 2021-01-26 17:46:55 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY4FS_8_phosphatidylglycerol_biosyn_II
-2021-01-26 17:46:55 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY66_399_gluconeogenesis_III
 2021-01-26 17:46:55 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY66_399_gluconeogenesis_III
 2021-01-26 17:46:55 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY66_399_gluconeogenesis_III
-2021-01-26 17:46:55 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY66_400_glycolysis_VI
 2021-01-26 17:46:55 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY66_400_glycolysis_VI
 2021-01-26 17:46:55 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY66_400_glycolysis_VI
-2021-01-26 17:46:55 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY66_409_SP_of_purine_nt_salvage
 2021-01-26 17:46:55 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY66_409_SP_of_purine_nt_salvage
 2021-01-26 17:46:55 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY66_409_SP_of_purine_nt_salvage
-2021-01-26 17:46:55 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY66_422_D_galactose_deg_V
 2021-01-26 17:46:55 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWY66_422_D_galactose_deg_V
 2021-01-26 17:46:55 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWY66_422_D_galactose_deg_V
-2021-01-26 17:46:55 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWYG_321_mycolate_biosyn
 2021-01-26 17:46:55 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PWYG_321_mycolate_biosyn
 2021-01-26 17:46:55 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PWYG_321_mycolate_biosyn
-2021-01-26 17:46:55 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PYRIDNUCSYN_PWY_NAD_biosyn_I
 2021-01-26 17:46:55 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PYRIDNUCSYN_PWY_NAD_biosyn_I
 2021-01-26 17:46:55 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PYRIDNUCSYN_PWY_NAD_biosyn_I
-2021-01-26 17:46:55 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PYRIDOXSYN_PWY_pyridoxal_5_phosphate_biosyn_I
 2021-01-26 17:46:55 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + PYRIDOXSYN_PWY_pyridoxal_5_phosphate_biosyn_I
 2021-01-26 17:46:55 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, PYRIDOXSYN_PWY_pyridoxal_5_phosphate_biosyn_I
-2021-01-26 17:46:55 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + RHAMCAT_PWY_L_rhamnose_deg_I
 2021-01-26 17:46:55 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + RHAMCAT_PWY_L_rhamnose_deg_I
 2021-01-26 17:46:55 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, RHAMCAT_PWY_L_rhamnose_deg_I
-2021-01-26 17:46:55 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + RIBOSYN2_PWY_flavin_biosyn_I
 2021-01-26 17:46:55 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + RIBOSYN2_PWY_flavin_biosyn_I
 2021-01-26 17:46:55 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, RIBOSYN2_PWY_flavin_biosyn_I
-2021-01-26 17:46:55 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + SALVADEHYPOX_PWY_adenosine_nt_deg_II
 2021-01-26 17:46:55 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + SALVADEHYPOX_PWY_adenosine_nt_deg_II
 2021-01-26 17:46:55 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, SALVADEHYPOX_PWY_adenosine_nt_deg_II
-2021-01-26 17:46:55 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + SER_GLYSYN_PWY_SP_of_L_serine__glycine_biosyn_I
 2021-01-26 17:46:55 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + SER_GLYSYN_PWY_SP_of_L_serine__glycine_biosyn_I
 2021-01-26 17:46:55 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, SER_GLYSYN_PWY_SP_of_L_serine__glycine_biosyn_I
-2021-01-26 17:46:55 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + TCA_GLYOX_BYPASS_SP_of_glyoxylate_bypass__TCA
 2021-01-26 17:46:55 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + TCA_GLYOX_BYPASS_SP_of_glyoxylate_bypass__TCA
 2021-01-26 17:46:55 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, TCA_GLYOX_BYPASS_SP_of_glyoxylate_bypass__TCA
-2021-01-26 17:46:55 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + TCA_TCA_cyc_I
 2021-01-26 17:46:55 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + TCA_TCA_cyc_I
 2021-01-26 17:46:55 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, TCA_TCA_cyc_I
-2021-01-26 17:46:55 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + THISYNARA_PWY_SP_of_thiamin_diphosphate_biosyn_III
 2021-01-26 17:46:55 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + THISYNARA_PWY_SP_of_thiamin_diphosphate_biosyn_III
 2021-01-26 17:46:55 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, THISYNARA_PWY_SP_of_thiamin_diphosphate_biosyn_III
-2021-01-26 17:46:55 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + THRESYN_PWY_SP_of_L_threonine_biosyn
 2021-01-26 17:46:55 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + THRESYN_PWY_SP_of_L_threonine_biosyn
 2021-01-26 17:46:55 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, THRESYN_PWY_SP_of_L_threonine_biosyn
-2021-01-26 17:46:55 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + TRNA_CHARGING_PWY_tRNA_charging
 2021-01-26 17:46:55 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + TRNA_CHARGING_PWY_tRNA_charging
 2021-01-26 17:46:55 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, TRNA_CHARGING_PWY_tRNA_charging
-2021-01-26 17:46:55 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + UDPNAGSYN_PWY_UDP_N_acetyl_D_glucosamine_biosyn_I
 2021-01-26 17:46:55 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + UDPNAGSYN_PWY_UDP_N_acetyl_D_glucosamine_biosyn_I
 2021-01-26 17:46:55 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, UDPNAGSYN_PWY_UDP_N_acetyl_D_glucosamine_biosyn_I
-2021-01-26 17:46:56 INFO::Formula for fixed effects: expr ~  diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + VALSYN_PWY_L_valine_biosyn
 2021-01-26 17:46:56 INFO::Final formula: ~,expr,diagnosis + dysbiosisCD + dysbiosisUC + dysbiosisnonIBD + antibiotics + age + subject + site + VALSYN_PWY_L_valine_biosyn
 2021-01-26 17:46:56 INFO::Metadata items: diagnosis, dysbiosisCD, dysbiosisUC, dysbiosisnonIBD, antibiotics, age, subject, site, VALSYN_PWY_L_valine_biosyn
 2021-01-26 17:46:59 INFO::Counting total values for each feature

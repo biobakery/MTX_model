@@ -329,7 +329,7 @@ fit.each <- function(
                 if (flag == 0) {
                     logging::logwarn(
                         paste("Feature name not found in dnadata",
-                              "so not applied to formula as fixed effect: %s"), toString(colnames(mymeta)))
+                              "so not applied to formula with effects: %s"), toString(colnames(mymeta)))
                     next        
                 }   
             }
