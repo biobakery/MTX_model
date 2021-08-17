@@ -408,7 +408,7 @@ fit.each <- function(
         mydf <- data.frame(expr = features[,i], mymeta)
         formula_text <-
             paste("expr ~ ", paste(colnames(mymeta), collapse = " + "))
-        logging::loginfo("Formula for fixed effects: %s", formula_text)
+        #logging::loginfo("Formula for fixed effects: %s", formula_text)
         formula <-
             tryCatch(
                 as.formula(formula_text),
