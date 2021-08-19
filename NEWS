@@ -4,7 +4,7 @@
 ## Changes in v1.2.0 (2021-08-19) ##
 * Updated publication info
 
-## Changes in v1.0.0 (2021-04-19) ##
+## Changes in v1.1.0 (2021-04-19) ##
 * Added Logistic Model
 * Renamed the pre-filtering approaches: 'lenient', 'semi_strict', 'strict'
 
