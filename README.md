@@ -205,7 +205,7 @@ Options:
 		The DNA abundance for each feature [ Default: none ]
 
 	-y RNA_DNA_FLT, --rna_dna_flt=RNA_DNA_FLT
-		Filtering features/samples based on the detectable abundance of RNA and covariate DNA per feature [ Default: global ]
+		Filtering features/samples based on the detectable abundance of RNA and covariate DNA per feature [ Default: lenient ]
 		[ Choices: none, lenient, semi_strict, strict]
 		none: do not apply filtering
 		lenient: ignore features that are not detected at both DNA and RNA levels across all samples
