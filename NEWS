@@ -1,6 +1,12 @@
 
 # MTXmodel History #
 
+## Changes in v1.2.1 (2022-11-14) ##
+* Fixed warning on if conditions
+
+## Changes in v1.2.0 (2022-06-18) ##
+* Added feature to generate normalized RNA matrix
+
 ## Changes in v1.2.0 (2021-08-19) ##
 * Updated publication info
 
@@ -10,3 +16,4 @@
 
 ## Changes in v1.0.0 (2020-12-01) ##
 * Built with MaAsLin2 version 1.5.1 (12-02-2020)
+

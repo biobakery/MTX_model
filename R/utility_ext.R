@@ -575,16 +575,21 @@ fit.dnadata <-
             }
             return(myvalue)
         }
-        paras$metadata <- unlist(lapply(paras$name, extract_metadata_name))
-        # compute the value as the model contrast minus metadata
-        paras$value <-
-            mapply(function(x, y) {
-                if (x == y)
-                    x
-                else
-                    gsub(x, "", y)
-            }, paras$metadata, paras$name)
-        
+		if (!is.null(metadata_names) & length(metadata_names) > 0) {
+        	paras$metadata <- unlist(lapply(paras$name, extract_metadata_name))
+        	# compute the value as the model contrast minus metadata
+        	paras$value <-
+            	mapply(function(x, y) {
+                	if (x == y)
+                    	x
+                	else
+                    	gsub(x, "", y)
+            	}, paras$metadata, paras$name)
+        } else {
+			paras$metadata <- "NA"
+			paras$value <- "NA"
+		}
+
         ##############################
         # Sort by decreasing q-value #
         ##############################

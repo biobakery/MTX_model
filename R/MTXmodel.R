@@ -651,7 +651,7 @@ MTXmodel <-
         }
        
         # covariate-DNA
-        if (dnadata != "none") {
+        if (length(dnadata) > 1) {
             samples_row_row <- intersect(rownames(metadata), rownames(dnadata))
             if (length(samples_row_row) > 0) {
                 # this is the expected formatting so do not modify data frames
@@ -720,7 +720,8 @@ MTXmodel <-
         # get a set of the samples with both metadata and features
         intersect_samples <- intersect(rownames(data), rownames(metadata))
         # covariate-DNA
-        if (dnadata != "none") {
+        #if (dnadata != "none") {
+        if (length(dnadata) > 1) {
             intersect_samples <- intersect(rownames(dnadata), intersect_samples)
         }
         logging::logdebug(
@@ -734,7 +735,7 @@ MTXmodel <-
         data <- data[intersect_samples, , drop = FALSE]
         metadata <- metadata[intersect_samples, , drop = FALSE]
         # covariate-DNA
-        if (dnadata != "none") {
+        if (length(dnadata) > 1) {
             dnadata <- dnadata[intersect_samples, , drop = FALSE]
         }
         
@@ -757,10 +758,11 @@ MTXmodel <-
                     paste(to_remove, collapse = " , ")
                 )
             fixed_effects <- setdiff(fixed_effects, to_remove)
-            if (length(fixed_effects) == 0) {
-                logging::logerror("No fixed effects included in formula.")
-                stop()
-            }
+            # covariate-DNA
+			#if (length(fixed_effects) == 0) {
+            #    logging::logerror("No fixed effects included in formula.")
+            #    stop()
+            #}
         }
         
         if (!is.null(random_effects)) {
@@ -811,22 +813,27 @@ MTXmodel <-
         metadata <- metadata[, effects_names, drop = FALSE]
         
         # create the fixed effects formula text
-        formula_text <-
-            paste("expr ~ ", paste(fixed_effects, collapse = " + "))
-        logging::loginfo("Formula for fixed effects: %s", formula_text)
-        formula <-
-            tryCatch(
-                as.formula(formula_text),
-                error = function(e)
-                    stop(
-                        paste(
-                            "Invalid formula.",
-                            "Please provide a different formula: ",
-                            formula_text
-                        )
-                    )
-            )
-        
+        # covariate-DNA 
+		if (! is.null(fixed_effects) && length(fixed_effects) > 0) {
+			formula_text <-
+            	paste("expr ~ ", paste(fixed_effects, collapse = " + "))
+        	logging::loginfo("Formula for fixed effects: %s", formula_text)
+        	formula <-
+            	tryCatch(
+                	as.formula(formula_text),
+                	error = function(e)
+                    	stop(
+                        	paste(
+                            	"Invalid formula.",
+                            	"Please provide a different formula: ",
+                            	formula_text
+                        	)
+                    	)
+            	)
+        } else {
+			formula <- NULL
+		}
+
         #########################################################
         # Filter data based on min abundance and min prevalence #
         #########################################################
@@ -914,7 +921,7 @@ MTXmodel <-
             normalizeFeatures(filtered_data, normalization = normalization)
         
         # covariate-DNA
-        if (dnadata != "none") {
+        if (length(dnadata) > 1) {
             dnadata_norm <-
                 normalizeFeatures(dnadata, normalization = normalization)
         }
@@ -941,14 +948,14 @@ MTXmodel <-
         if (transform == "PA") {
             filtered_data_norm_transformed <-
                 transformFeatures_ext(filtered_data_norm, transformation = transform)
-            if (dnadata != "none") {
+            if (length(dnadata) > 1) {
                 logging::loginfo("Running selected transform method for covaraite abundance: %s", "LOG")
                 dnadata_norm_transformed <- transformFeatures(dnadata_norm, transformation = "LOG")
             }
         } else {
             filtered_data_norm_transformed <-
                 transformFeatures(filtered_data_norm, transformation = transform)
-            if (dnadata != "none") {
+            if (length(dnadata) > 1) {
                 dnadata_norm_transformed <- transformFeatures(dnadata_norm, transformation = transform)
             }
         }
@@ -957,7 +964,7 @@ MTXmodel <-
         logging::loginfo(
             "Running selected analysis method: %s", analysis_method)
         # covariate-DNA
-        if (dnadata != "none") {
+        if (length(dnadata) > 1) {
             fit_data <-
                 fit.dnadata(
                     filtered_data,
