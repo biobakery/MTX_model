@@ -38,14 +38,7 @@ If only running from the command line, you do not need to install the MTXmodel p
 You only need to do **any one** of the following options to install the FUGAsseM package. 	
 
  
-**Option 1: Installing using devtools**
-
-```
-library(devtools)
-install_github('biobakery/MTX_model')
-```
-
-**Option 2: Installing from command line**
+**Option 1: Installing from command line**
 
 1. Download the source: [MTX_model.master.zip](https://github.com/biobakery/MTX_model/archive/master.zip)
 2. Decompress the download: 
@@ -56,7 +49,13 @@ install_github('biobakery/MTX_model')
 5. Install the MTXmodel package (only required if running as an R function): 
     * ``$ R CMD INSTALL MTX_model-master``
 
- 
+ **Option 2: Installing using devtools**
+
+```
+library(devtools)
+install_github('biobakery/MTX_model')
+```
+
 
 ## How to Run ##
 
