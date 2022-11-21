@@ -38,7 +38,7 @@ If only running from the command line, you do not need to install the MTXmodel p
 You only need to do **any one** of the following options to install the FUGAsseM package. 	
 
  
-**Option 1: Installing fusing devtools**
+**Option 1: Installing using devtools**
 
 ```
 library(devtools)
