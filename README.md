@@ -5,7 +5,7 @@ This R package is built for metatranscriptomics (MTX) modeling based on [MaAsLin
 
 
 If you use the MTXmodel package, please cite our manuscript:
-Zhang et al., Statistical approaches for differential expression analysis in metatranscriptomics. *Bioinformatics*, 37.Supplement_1: i34-i41 (2021).
+Yancong Zhang, Kelsey N. Thompson, Huttenhower C, Eric A. Franzosa. "[Statistical approaches for differential expression analysis in metatranscriptomics](https://academic.oup.com/bioinformatics/article/37/Supplement_1/i34/6319701)." *Bioinformatics*, 37.Supplement_1: i34-i41 (2021).
 
 And feel free to link it to your Methods: https://github.com/biobakery/MTX_model
 
@@ -35,7 +35,17 @@ MTXmodel can be run from the command line or as an R function.
 
 If only running from the command line, you do not need to install the MTXmodel package but you will need to install the MTXmodel dependencies.
 
-### From command line ###
+You only need to do **any one** of the following options to install the FUGAsseM package. 	
+
+ 
+**Option 1: Installing fusing devtools**
+
+```
+library(devtools)
+install_github('biobakery/MTX_model')
+```
+
+**Option 2: Installing from command line**
 
 1. Download the source: [MTX_model.master.zip](https://github.com/biobakery/MTX_model/archive/master.zip)
 2. Decompress the download: 
@@ -46,6 +56,7 @@ If only running from the command line, you do not need to install the MTXmodel p
 5. Install the MTXmodel package (only required if running as an R function): 
     * ``$ R CMD INSTALL MTX_model-master``
 
+ 
 
 ## How to Run ##
 
