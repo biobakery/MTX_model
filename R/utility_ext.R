@@ -301,11 +301,12 @@ fit.each <- function(
                     names(mymeta)[names(mymeta) == "i"] <- tmp[1]
                     myname <- tmp[1]
                 } else {
-                    if (tmp[-1] %in% colnames(dnadata)) {
+					mytmp <- tmp[length(tmp)]
+                    if (mytmp %in% colnames(dnadata)) {
                         flag <- 1
-                        mymeta <- data.frame(mymeta, i=dnadata[, tmp[-1]])
-                        names(mymeta)[names(mymeta) == "i"] <- tmp[-1]
-                        myname <- tmp[-1]
+                        mymeta <- data.frame(mymeta, i=dnadata[, mytmp])
+                        names(mymeta)[names(mymeta) == "i"] <- mytmp
+                        myname <- mytmp
                     }   
                 }
             }
@@ -318,11 +319,12 @@ fit.each <- function(
                         names(mymeta)[names(mymeta) == "i"] <- tmp[1]
                         myname <- tmp[1]
                     } else {
-                        if (tmp[-1] %in% colnames(dnadata)) {
+						mytmp <- tmp[length(tmp)]
+                        if (mytmp %in% colnames(dnadata)) {
                             flag <- 1
-                            mymeta <- data.frame(mymeta, i=dnadata[, tmp[-1]])
-                            names(mymeta)[names(mymeta) == "i"] <- tmp[-1]
-                            myname <- tmp[-1]
+                            mymeta <- data.frame(mymeta, i=dnadata[, mytmp])
+                            names(mymeta)[names(mymeta) == "i"] <- mytmp
+                            myname <- mytmp
                         }   
                     }
                 }
