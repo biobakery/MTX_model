@@ -409,8 +409,8 @@ MTXmodel <-
         }
         
         # covariate-DNA
-        if (input_dnadata != "none") {
-            if (is.character(input_dnadata)) {
+        if (is.character(input_dnadata)) {
+        	if (input_dnadata != "none") {
                 dnadata <-
                     data.frame(data.table::fread(
                         input_dnadata, header = TRUE, sep = "\t"),
@@ -421,10 +421,10 @@ MTXmodel <-
                                           row.names = 1)
                 }
             } else {
-                dnadata <- input_dnadata
+            	dnadata <- "none"
             }
         } else {
-            dnadata <- "none"
+			dnadata <- input_dnadata
         }
         
         # create an output folder and figures folder if it does not exist
