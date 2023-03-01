@@ -595,6 +595,11 @@ MTXmodel <-
                     "as rows and metadata samples as rows"))
         } else {
             samples_column_row <- intersect(colnames(data), rownames(metadata))
+            if (length(samples_column_row) == 0) { 
+              # modify possibly included special chars in sample names in metadata
+              rownames(metadata) <- make.names(rownames(metadata))
+              samples_column_row <- intersect(colnames(data), rownames(metadata))
+            }
             if (length(samples_column_row) > 0) {
                 logging::loginfo(
                     paste(
@@ -619,6 +624,11 @@ MTXmodel <-
                 } else {
                     samples_row_column <- 
                         intersect(rownames(data), colnames(metadata))
+                    if (length(samples_row_column) == 0) {
+                      # modify possibly included special chars in sample names in data
+                      rownames(data) <- make.names(rownames(data))
+                      samples_row_column <- intersect(rownames(data), colnames(metadata))
+                    }
                     if (length(samples_row_column) > 0) {
                         logging::loginfo(
                             paste(
@@ -643,7 +653,7 @@ MTXmodel <-
                             paste(rownames(metadata), collapse = ","))
                         logging::logdebug(
                             "Metadata columns: %s",
-                            paste(colnames(data), collapse = ","))
+                            paste(colnames(metadata), collapse = ","))
                         stop()
                     }
                 }
@@ -652,45 +662,79 @@ MTXmodel <-
        
         # covariate-DNA
         if (length(dnadata) > 1) {
-            samples_row_row <- intersect(rownames(metadata), rownames(dnadata))
-            if (length(samples_row_row) > 0) {
-                # this is the expected formatting so do not modify data frames
-                logging::loginfo(
-                    paste(
-                        "Input format is metadata samples",
-                        "as rows and dnadata samples as rows"))
-            } else {
-                samples_column_row <- intersect(colnames(dnadata), rownames(metadata))
-                if (length(samples_column_row) > 0) {
-                    logging::loginfo(
-                        paste(
-                            "Input format is dnadata samples",
-                            "as columns and metadata samples as rows"))
-                    # transpose data frame so samples are rows
-                    dnadata <- as.data.frame(t(dnadata))
-                    logging::logdebug(
-                        "Transformed data so samples are rows")
-                } else {
-                    logging::logerror(
-                        paste("Unable to find samples in data and",
-                              "metadata files.",
-                              "Rows/columns do not match."))
-                    logging::logdebug(
-                        "Metadata rows: %s", 
-                        paste(rownames(metadata), collapse = ","))
-                    logging::logdebug(
-                        "Metadata columns: %s", 
-                        paste(colnames(metadata), collapse = ","))
-                    logging::logdebug(
-                        "DNAdata rows: %s", 
-                        paste(rownames(dnadata), collapse = ","))
-                    logging::logdebug(
-                        "DNAdata columns: %s",
-                        paste(colnames(dnadata), collapse = ","))
-                    stop()
-                }
+          samples_row_row <- intersect(rownames(dnadata), rownames(metadata))
+          if (length(samples_row_row) > 0) {
+            # this is the expected formatting so do not modify dnadata frames
+            logging::loginfo(
+              paste(
+                "Input format is dnadata samples",
+                "as rows and metadata samples as rows"))
+          } else {
+            samples_column_row <- intersect(colnames(dnadata), rownames(metadata))
+            if (length(samples_column_row) == 0) { 
+              # modify possibly included special chars in sample names in metadata
+              rownames(metadata) <- make.names(rownames(metadata))
+              samples_column_row <- intersect(colnames(dnadata), rownames(metadata))
             }
+            if (length(samples_column_row) > 0) {
+              logging::loginfo(
+                paste(
+                  "Input format is dnadata samples",
+                  "as columns and metadata samples as rows"))
+              # transpose dnadata frame so samples are rows
+              dnadata <- as.data.frame(t(dnadata))
+              logging::logdebug(
+                "Transformed dnadata so samples are rows")
+            } else {
+              samples_column_column <- intersect(colnames(dnadata), colnames(metadata))
+              if (length(samples_column_column) > 0) {
+                logging::loginfo(
+                  paste(
+                    "Input format is dnadata samples",
+                    "as columns and metadata samples as columns"))
+                dnadata <- as.data.frame(t(dnadata))
+                metadata <- as.data.frame(t(metadata))
+                logging::logdebug(
+                  "Transformed dnadata and metadata so samples are rows")
+              } else {
+                samples_row_column <- intersect(rownames(dnadata), colnames(metadata))
+                if (length(samples_row_column) == 0) {
+                  # modify possibly included special chars in sample names in dnadata
+                  rownames(dnadata) <- make.names(rownames(dnadata))
+                  samples_row_column <- intersect(rownames(dnadata), colnames(metadata))
+                }
+                if (length(samples_row_column) > 0) {
+                  logging::loginfo(
+                    paste(
+                      "Input format is dnadata samples",
+                      "as rows and metadata samples as columns"))
+                  metadata <- as.data.frame(t(metadata))
+                  logging::logdebug(
+                    "Transformed metadata so samples are rows")
+                } else {
+                  logging::logerror(
+                    paste("Unable to find samples in dnadata and",
+                          "metadata files.",
+                          "Rows/columns do not match."))
+                  logging::logdebug(
+                    "DNAData rows: %s", 
+                    paste(rownames(dnadata), collapse = ","))
+                  logging::logdebug(
+                    "DNAData columns: %s", 
+                    paste(colnames(dnadata), collapse = ","))
+                  logging::logdebug(
+                    "Metadata rows: %s", 
+                    paste(rownames(metadata), collapse = ","))
+                  logging::logdebug(
+                    "Metadata columns: %s",
+                    paste(colnames(metadata), collapse = ","))
+                  stop()
+                }
+              }
+            }
+          }
         }
+          
         
         # replace unexpected characters in feature names
         colnames(data) <- make.names(colnames(data))
@@ -722,6 +766,8 @@ MTXmodel <-
         # covariate-DNA
         #if (dnadata != "none") {
         if (length(dnadata) > 1) {
+            # replace unexpected characters in feature names
+            colnames(dnadata) <- make.names(colnames(dnadata))
             intersect_samples <- intersect(rownames(dnadata), intersect_samples)
         }
         logging::logdebug(

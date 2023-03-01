@@ -3,6 +3,7 @@
 
 ## Changes in v1.2.2 (2022-11-14) ##
 * Fixed warning on if conditions
+* Fixed issue for sample matching
 * Release v1.2.2
 
 ## Changes in v1.2.1 (2022-08-19) ##
