@@ -1006,6 +1006,31 @@ MTXmodel <-
             }
         }
         
+		if (ncol(filtered_data_norm) < 1) { 
+            all_outfile <- file.path(output, "all_results.tsv")
+            mycolnames = c( 
+                "feature",
+                "metadata",
+                "value",
+                "coef",
+                "stderr",
+                "N", 
+                "N.not.0",
+                "pval",
+                "qval")
+            write.table(
+                t(mycolnames),
+                file = all_outfile,
+                sep = "\t",
+                quote = FALSE,
+                col.names = FALSE,
+                row.names = FALSE)
+
+            residuals_file = file.path(output, "residuals.rds")
+            file.create(residuals_file)
+            return(NULL)
+        }		
+
         # apply the method to the data with the correction
         logging::loginfo(
             "Running selected analysis method: %s", analysis_method)
