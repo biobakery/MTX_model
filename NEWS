@@ -3,6 +3,7 @@
 
 ## Changes in v1.2.3 (2023-04-28) ##
 * Fixed issue if no features left after filtering
+* Added RNA-DNA ratio demo data 
 
 ## Changes in v1.2.2 (2022-11-14) ##
 * Fixed warning on if conditions
