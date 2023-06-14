@@ -35,7 +35,7 @@ MTXmodel can be run from the command line or as an R function.
 
 If only running from the command line, you do not need to install the MTXmodel package but you will need to install the MTXmodel dependencies.
 
-You only need to do **any one** of the following options to install the FUGAsseM package. 	
+You only need to do **any one** of the following options to install the MTXmodel package. 	
 
  
 **Option 1: Installing from command line**
