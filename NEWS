@@ -3,6 +3,7 @@
 
 ## Changes in v1.2.4 (2023-09-07) ##
 * Fixed xtfrm warning message
+* Add log info if there is no result
 
 ## Changes in v1.2.3 (2023-04-28) ##
 * Fixed issue if no features left after filtering

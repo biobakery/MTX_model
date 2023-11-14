@@ -494,7 +494,7 @@ fit.each <- function(
           output$ranef <- rbind(output$ranef, ranef) 
         }
     }
-    row.names(output$residuals) <- rownames
+	row.names(output$residuals) <- rownames
     row.names(output$fitted) <- rownames
     if (!(is.null(random_effects_formula))) {
       row.names(output$ranef) <- rownames
@@ -523,7 +523,8 @@ fit.dnadata <-
         correction = "BH",
         cores = 1) {                
         
-        ##############################
+
+		##############################
         # Apply per-feature modeling #
         ##############################
         outputs <- fit.each(
@@ -543,8 +544,13 @@ fit.dnadata <-
         
         # bind the results for each feature
         paras <- outputs$para
-        residuals <- outputs$residuals
-        colnames(residuals) <- rownames(features)
+        residuals <- data.frame(outputs$residuals)
+        if (nrow(residuals) <= 0 || ncol(residuals) <= 0) {
+			logging::logerror(
+                "No valid statistic results!")
+			return(NULL)
+		}
+		colnames(residuals) <- rownames(features)
         fitted <- outputs$fitted
         #colnames(fitted) <- rownames(features)
         if (!(is.null(random_effects_formula))) {
