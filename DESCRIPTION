@@ -1,7 +1,7 @@
 Package: MTXmodel
 Title: Statistical approaches for differential expression analysis in metatranscriptomics
 Year: 2021
-Version: 1.2.4
+Version: 1.2.5
 Authors@R: c(
   person("Yancong", "Zhang", email = "zhangyc201211@gmail.com", role = "aut"), 
   person("Eric", "Franzosa", email = "franzosa@hsph.harvard.edu", role = c("aut", "cre"))

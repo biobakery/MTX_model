@@ -409,8 +409,7 @@ fit.each <- function(
         
         mydf <- data.frame(expr = features[,i], mymeta)
         formula_text <-
-            paste("expr ~ ", paste(colnames(mymeta), collapse = " + "))
-        #logging::loginfo("Formula for fixed effects: %s", formula_text)
+            paste("expr ~ ", paste(c(fixed_effects, i), collapse = " + "))
         formula <-
             tryCatch(
                 as.formula(formula_text),
@@ -539,7 +538,7 @@ fit.dnadata <-
             model,
             fixed_effects,
             effects_names,
-            random_effects_formula = NULL)
+            random_effects_formula)
         
         
         # bind the results for each feature
