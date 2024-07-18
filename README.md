@@ -9,6 +9,8 @@ Yancong Zhang, Kelsey N. Thompson, Huttenhower C, Eric A. Franzosa. "[Statistica
 
 And feel free to link it to your Methods: https://github.com/biobakery/MTX_model
 
+**For additional information, read the [MTXmodel Tutorial](https://github.com/biobakery/biobakery/wiki/MTXmodel_tutorial)**
+
 --------------------------------------------
 
 ## Contents ##
